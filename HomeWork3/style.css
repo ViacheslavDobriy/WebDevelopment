@@ -27,7 +27,6 @@
 .header__link {
     text-decoration: none;
     color: black;
-    font-family: 'Gilroy-Bold';
     font-size: 14px;
     line-height: 16px;
 }
@@ -50,7 +49,6 @@
 }
 
 .top__content__title {
-    font-family: 'Gilroy-SemiBold';
     margin-bottom: 17px;
     font-size: 60px;
     line-height: 70px;
