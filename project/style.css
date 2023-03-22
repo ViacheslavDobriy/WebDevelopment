@@ -35,6 +35,13 @@ body {
     margin-top: 160px;
     margin-bottom: 197px;
     display: flex;
+    justify-content: center;
+    gap: 109px;
+}
+
+.top__info {
+    display: flex;
+    flex-direction: column;
 }
 
 .subtitle {
@@ -45,24 +52,17 @@ body {
     font-size: 18px;
     line-height: 160%;
     text-transform: uppercase;
-    width: 265px;
-    height: 29px;
-    left: 387px;
-    top: 260px;
     color: #3A68B8;
 }
 
 .title {
     margin-bottom: 40px;
-    width: 604px;
-    height: 142px;
-    left: 387px;
-    top: 299px;
     font-style: normal;
     font-weight: 800;
     font-size: 55px;
     line-height: 130%;
     color: #FFFFFF;
+    width: 605px;
 }
 
 .text {
@@ -96,6 +96,13 @@ body {
     padding: 15px 30px;
     text-transform: capitalize;
     color: #fff;
+}
+
+.button__icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
 }
 
 .top__logos {
@@ -192,7 +199,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 262px);
     gap: 30px;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 48px;
     padding-bottom: 46px;
     font-family: 'Roboto';
