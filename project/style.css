@@ -9,8 +9,13 @@ body {
     background: #020A18;
 }
 
+.center {
+    padding-left: calc(50% - 573px);
+    padding-right: calc(50% - 573px);
+}
+
 .top {
-    margin: 0 auto;
+    padding-bottom: 99px;
 }
 
 .header {
@@ -35,6 +40,14 @@ body {
     margin-top: 160px;
     margin-bottom: 197px;
     display: flex;
+    justify-content: center;
+    gap: 128px;
+}
+
+.top__info {
+    display: flex;
+    flex-direction: column;
+    max-width: 604px;
 }
 
 .subtitle {
@@ -45,24 +58,17 @@ body {
     font-size: 18px;
     line-height: 160%;
     text-transform: uppercase;
-    width: 265px;
-    height: 29px;
-    left: 387px;
-    top: 260px;
     color: #3A68B8;
 }
 
 .title {
     margin-bottom: 40px;
-    width: 604px;
-    height: 142px;
-    left: 387px;
-    top: 299px;
     font-style: normal;
     font-weight: 800;
     font-size: 55px;
     line-height: 130%;
     color: #FFFFFF;
+    width: 605px;
 }
 
 .text {
@@ -98,10 +104,17 @@ body {
     color: #fff;
 }
 
+.button__icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
 .top__logos {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 99px;
+    justify-content: center;
+    gap: 72px;
 }
 
 .content {
@@ -125,8 +138,6 @@ body {
 .item__big {
     grid-column: span 2;
     grid-row: span 2;
-    display: grid;
-    justify-items: center;
     gap: 60px;
 }
 
@@ -192,7 +203,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 262px);
     gap: 30px;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 48px;
     padding-bottom: 46px;
     font-family: 'Roboto';
@@ -235,4 +246,41 @@ body {
 .contacts__links__icons {
     display: flex;
     gap: 24px;
+}
+
+@media (max-width: 1024px) {
+    .top__content {
+        flex-wrap: wrap;
+    }
+    .center {
+        padding-left: calc(50% - 376px);
+        padding-right: calc(50% - 376px);
+    }
+    .subtitle {
+        font-size: 16px;
+    }
+    .title {
+        font-size: 48px;
+    }
+    .top__logos {
+        max-width: 680px;
+        gap: 32px;
+        margin: auto;
+        flex-wrap: wrap
+    }
+    .top {
+        padding-bottom: 120px;
+    }
+    .content {
+        grid-template-columns: repeat(1, 362px);
+        gap: 30px;
+    }
+    .item__big {
+        grid-column: span 1;
+        grid-row: span 1;
+        gap: 30px;
+    }
+    .item__big img {
+        width: 98px;
+    }
 }
