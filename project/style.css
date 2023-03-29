@@ -68,14 +68,9 @@ body {
     font-size: 55px;
     line-height: 130%;
     color: #FFFFFF;
-    width: 605px;
 }
 
 .text {
-    width: 558px;
-    height: 87px;
-    left: 387px;
-    top: 481px;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -312,14 +307,95 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 375px) {
+    .top {
+        padding-bottom: 108px;
+    }
     .header {
         padding-top: 22px;
         padding-bottom: 22px;
         gap: 16px;
     }
     .center {
-        padding-left: calc(50% - 376px);
-        padding-right: calc(50% - 376px);
+        padding-left: calc(50% - 179.5px);
+        padding-right: calc(50% - 179.5px);
+    }
+    .header {
+        margin-bottom: 64px;
+    }
+    .header__link {
+        font-size: 14px;
+    }
+    .top__content {
+        margin-top: 0;
+    }
+    .top__info {
+        max-width: 359px;
+        text-align: center;
+    }
+    .subtitle {
+        margin-bottom: 16px;
+        font-size: 14px;
+    }
+    .title {
+        font-size: 28px;
+        margin-bottom: 64px;
+    }
+    .top__buttons {
+        margin-top: 39px;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .top__content__image {
+        max-width: 359px;
+    }
+    .content {
+        padding-top: 0px;
+        padding-bottom: 96px;
+    }
+    .content__before__footer {
+        gap: 32px;
+        padding-bottom: 96px;
+    }
+    .about__content__before__footer {
+        max-width: 359px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-bottom: 0px;
+    }
+    .mini__title {
+        font-size: 24px;
+        margin-bottom: 0px;
+    }
+    .text__content__before__footer {
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    .content__image {
+        max-width: 359px;
+    }
+    .content__footer {
+        display: flex;
+        text-align: center;
+        padding-bottom: 64px;
+        padding-left: 18px;
+        padding-right: 16px;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .footer__about__middle {
+        order: -1;
+    }
+    .text__middle__content__footer {
+        text-align: left;
+    }
+    .mini__subtitle {
+        padding-bottom: 32px;
+    }
+    .contacts__links__icons {
+        justify-content: center;
     }
 }
